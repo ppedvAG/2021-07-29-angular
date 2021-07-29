@@ -1,0 +1,18 @@
+<h2>ÜBUNG MOUSEENTER MOUSELEAVE</h2>
+
+<p [class]="isHome ? 'home' : 'away'" (mouseenter)="home()" (mouseleave)="away()">{{isHome ? 'home' : 'away'}}</p>
+
+<h2>ÜBUNG CLICK COUNTER</h2>
+
+<button (click)="handleClick()">{{counter}}</button>
+
+<button (click)="produceAlert()">alert</button>
+
+
+<!-- <input type="number" (input)="changeSize(($event.target as HTMLInputElement)!.value)">
+<div [style.font-size.px]="size">
+  Hello, World!
+</div> -->
+
+
+<button (click)="showEventObject($event)">{{eventTarget}}</button>

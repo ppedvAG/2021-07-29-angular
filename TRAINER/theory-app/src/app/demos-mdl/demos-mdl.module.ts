@@ -8,6 +8,7 @@ import { TemplateVarsComponent } from './template-vars/template-vars.component';
 import { InputVarsComponent } from './input-vars/input-vars.component';
 import { LifecycleComponent } from './lifecycle/lifecycle.component';
 import { DiashowComponent } from './diashow/diashow.component';
+import { EventsComponent } from './events/events.component';
 
 
 
@@ -20,7 +21,8 @@ import { DiashowComponent } from './diashow/diashow.component';
     TemplateVarsComponent,
     InputVarsComponent,
     LifecycleComponent,
-    DiashowComponent
+    DiashowComponent,
+    EventsComponent
   ],
   imports: [
     CommonModule
