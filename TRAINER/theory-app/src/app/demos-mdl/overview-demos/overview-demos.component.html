@@ -1,3 +1,26 @@
 <p>overview-demos works!</p>
+
+<app-class-vars></app-class-vars>
+<hr>
+
+<app-template-vars></app-template-vars>
+<hr>
+
+<pre>
+    mit @Input() markiert man die Props, die dafür gedacht sind, Werte von der Elternkomponente zu übernehmen.
+    Die Übergabe kann auch durch eine Zwischenvariable stattfinden, die im Dekorator angelegt wird: @Input(varName).
+    In den Hochkommata bei Wertübergabe an Input-Variablen können beliebige JS-Expressions ausgeführt werden.
+</pre>
+<app-input-vars [placeholder1]="'wertVonOben1'"></app-input-vars>
+<!-- <app-input-vars [placeholder1]="'wertVonOben1'" [placeholder2]="'wertVonOben2'"></app-input-vars> 
+    Unter dem Namen placeholder2 kann man auf die Prop nicht zugreifen.
+-->
+<app-input-vars [placeholder1]="'wertVonOben1'" [anotherName]="'andererWertVonOben'"></app-input-vars>
+<app-input-vars [placeholder1]="true ? 'true' : 'false'"></app-input-vars>
+<hr>
+
+<app-lifecycle [inputProp]="'wert für input prop'"></app-lifecycle>
+<hr>
+
 <app-time></app-time>
 <app-card></app-card>

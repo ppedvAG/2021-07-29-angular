@@ -3,6 +3,11 @@ import { CommonModule } from '@angular/common';
 import { TimeComponent } from './time/time.component';
 import { OverviewDemosComponent } from './overview-demos/overview-demos.component';
 import { CardComponent } from './card/card.component';
+import { ClassVarsComponent } from './class-vars/class-vars.component';
+import { TemplateVarsComponent } from './template-vars/template-vars.component';
+import { InputVarsComponent } from './input-vars/input-vars.component';
+import { LifecycleComponent } from './lifecycle/lifecycle.component';
+import { DiashowComponent } from './diashow/diashow.component';
 
 
 
@@ -10,7 +15,12 @@ import { CardComponent } from './card/card.component';
   declarations: [
     TimeComponent,
     OverviewDemosComponent,
-    CardComponent
+    CardComponent,
+    ClassVarsComponent,
+    TemplateVarsComponent,
+    InputVarsComponent,
+    LifecycleComponent,
+    DiashowComponent
   ],
   imports: [
     CommonModule
