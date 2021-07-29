@@ -11,7 +11,7 @@ Ein Kurs von PPEDV :rocket:
   
 ## M001 | GETTING STARTED
 
-- [ ] Folien: DeinThema.pdf > Intro
+- [ ] Folien: ANGULAR.pdf > Getting Started
 - [ ] Demo:
 - [ ] Lab:
 - [ ] Commit:
