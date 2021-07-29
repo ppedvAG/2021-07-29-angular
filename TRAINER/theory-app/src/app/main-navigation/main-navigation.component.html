@@ -1,4 +1,17 @@
 <h1>Hauptnavigation</h1>
 
+<!-- Das Rendering von den Komponenten übernimmt der Router-Outlet -->
+<!-- 
 <app-overview-demos></app-overview-demos>
-<app-overview-todos></app-overview-todos>
+<app-overview-todos></app-overview-todos> -->
+
+
+<a routerLink="/demos">DEMOS</a> | <a routerLink="/todos">TODOS</a>
+
+<!-- routerLink funktioniert auch bei anderen Navigationselementen -->
+<!-- 
+<button routerLink="/demos">DEMOS</button> | <button routerLink="/todos">TODOS</button>
+<ul><li routerLink="/demos">DEMOS</li> | <li routerLink="/todos">TODOS</li></ul> 
+-->
+
+<router-outlet></router-outlet>

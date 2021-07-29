@@ -27,7 +27,7 @@ export class LifecycleComponent implements OnInit, OnChanges, OnDestroy {
   }
 
   ngOnDestroy() {
-    console.log('ngOnDestroy is logging');
+    console.log('ngOnDestroy is logging'); // wird beim Routing z.B. ausgeführt
   }
 
   // todo #1 
