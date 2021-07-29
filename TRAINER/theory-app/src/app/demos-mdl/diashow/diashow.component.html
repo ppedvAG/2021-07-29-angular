@@ -1,4 +1,4 @@
-<p>diashow works!</p>
+<h2>Übung diashow</h2>
 
 <!-- 
 Wie kann man erreichen, dass ein Array mit Links iteriert wird und die Links für ein img-Element genutzt werden?
@@ -14,3 +14,10 @@ Hinweise:
 Diashow läuft nonstop.
 Input-Variable kann eingesetzt werden.
  -->
+
+<div>
+
+    <img [src]="images[activeImg]">
+</div>
+
+<button (click)="stopDia()">stop</button>

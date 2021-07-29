@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-diashow',
@@ -8,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DiashowComponent implements OnInit {
 
+  @Input()
+  images: string[] = [];
+  activeImg = 0;
+  intervalId!: any;
+
   constructor() { }
 
   ngOnInit(): void {
+    this.intervalId = setInterval(() => {
+      this.activeImg === 3 ? this.activeImg = 0 : this.activeImg++
+    }, 2000)
+  }
+
+  stopDia() {
+    clearInterval(this.intervalId);
   }
 
 }

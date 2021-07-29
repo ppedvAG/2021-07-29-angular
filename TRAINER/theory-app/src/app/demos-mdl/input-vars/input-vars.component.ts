@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnChanges } from '@angular/core';
 
 @Component({
   selector: 'app-input-vars',
@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   styles: [
   ]
 })
-export class InputVarsComponent {
+export class InputVarsComponent implements OnChanges {
 
   @Input()
   placeholder1!: string;
@@ -17,4 +17,9 @@ export class InputVarsComponent {
 
   @Input('anotherName')
   placeholder2!: string;
+
+  ngOnChanges() {
+    console.log('this.placeholder1 :>> ', this.placeholder1);
+  }
+
 }
