@@ -13,4 +13,9 @@
 </pre>
 
 <button (click)=wuerfeln()>wirf!</button>
-<p [style.font-size.px]=getFontSize() [class.bingo]="zufallszahl == 6 ? true : false">{{zufallszahl}}</p>
+
+<!-- Option mit class._className_ -->
+<!-- <p [style.font-size.px]=getFontSize() [class.bingo]="zufallszahl == 6">{{zufallszahl}}</p> -->
+
+<!-- Option mit ngClass und Map -->
+<p [style.font-size.px]=getFontSize() [ngClass]="diceClasses">{{zufallszahl}}</p>
