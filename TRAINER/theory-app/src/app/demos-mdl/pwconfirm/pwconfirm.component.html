@@ -6,5 +6,16 @@
     Es soll zwei Eingabefelder geben, deren Inhalt wir mit ngModel überwachen.
     Solange die Eingabefelder unterschiedliche Werte haben, 
     soll der zugehörige OK-Button auf disabled gesetzt sein und 
-    darunter (in einem extra <div>) eine Warnung angezeigt werden.
+    darunter (in einem extra div) eine Warnung angezeigt werden.
 </pre>
+
+<label for="pw1">Geben Sie Ihr neues PW ein!: 
+    <input ngModel #pw1inp="ngModel" type="text" name="pw1" required>
+</label>
+<label for="pw2">Bestätigen Sie Ihr PW!:
+    <input ngModel #pw2inp="ngModel" type="text" name="pw2" required>
+</label>
+<button [disabled]="pw1inp.value !== pw2inp.value || !pw1inp.valid || !pw2inp.valid">bestätigen</button>
+
+<div *ngIf="pw1inp.value == pw2inp.value; else fehler">bestätigt</div>
+<ng-template #fehler>die Eingaben stimmen nicht überein</ng-template>
