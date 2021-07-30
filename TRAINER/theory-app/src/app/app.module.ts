@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { DemosMdlModule } from './demos-mdl/demos-mdl.module';
 import { MainNavigationComponent } from './main-navigation/main-navigation.component';
 import { TodosMdlModule } from './todos-mdl/todos-mdl.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [    
@@ -16,6 +17,7 @@ import { TodosMdlModule } from './todos-mdl/todos-mdl.module';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
     DemosMdlModule,
     TodosMdlModule,
   ],

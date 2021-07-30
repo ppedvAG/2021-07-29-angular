@@ -11,6 +11,8 @@ import { DiashowComponent } from './diashow/diashow.component';
 import { EventsComponent } from './events/events.component';
 import { DiceComponent } from './dice/dice.component';
 import { AppRoutingModule } from '../app-routing.module';
+import { FormsModule } from '@angular/forms';
+import { PwconfirmComponent } from './pwconfirm/pwconfirm.component';
 
 
 
@@ -25,11 +27,13 @@ import { AppRoutingModule } from '../app-routing.module';
     LifecycleComponent,
     DiashowComponent,
     EventsComponent,
-    DiceComponent
+    DiceComponent,
+    PwconfirmComponent
   ],
   imports: [
     CommonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   exports: [OverviewDemosComponent]
 })
