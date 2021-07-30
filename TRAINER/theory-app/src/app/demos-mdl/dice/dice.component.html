@@ -1,9 +1,16 @@
-<p>dice works!</p>
+<h2>ÜBUNG DICE</h2>
 
 <pre>
+    Thema: [style]-Property / Binding
     Komponente dice (Würfel) gibt eine Zufallszahl von 1 bis 6 bei einem Buttonclick;
     Die Zahl wird duch ein Paragraph ausgegeben. Die Schriftgröße im P hängt von der Zufallszahl ab.
     bei 1 - 10 px
     bei 2 - 20 usw.
     Anzuwenden ist Eigenschaft [style] von p.
+
+    Bei einer 6 wird die Klasse 'bingo' durch Prop [class._className_] angewendet. 
+    Klasse Bingo macht die Schrift zu 'rot' und Hintergrund zu 'blau'.
 </pre>
+
+<button (click)=wuerfeln()>wirf!</button>
+<p [style.font-size.px]=getFontSize() [class.bingo]="zufallszahl == 6 ? true : false">{{zufallszahl}}</p>
