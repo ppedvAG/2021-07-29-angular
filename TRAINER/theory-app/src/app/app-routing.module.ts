@@ -10,6 +10,7 @@ import { OverviewDemosComponent } from './demos-mdl/overview-demos/overview-demo
 import { PwconfirmComponent } from './demos-mdl/pwconfirm/pwconfirm.component';
 import { TemplateVarsComponent } from './demos-mdl/template-vars/template-vars.component';
 import { TimeComponent } from './demos-mdl/time/time.component';
+import { TimerComponent } from './demos-mdl/timer/timer.component';
 import { OverviewTodosComponent } from './todos-mdl/overview-todos/overview-todos.component';
 
 const routes: Routes = [
@@ -26,6 +27,7 @@ const routes: Routes = [
       {path: 'template-vars', component: TemplateVarsComponent},      
       {path: 'time', component: TimeComponent},     
       {path: 'app-pwconfirm', component: PwconfirmComponent},     
+      {path: 'timer', component: TimerComponent},     
     ]
   },
   {path: 'todos', component: OverviewTodosComponent}

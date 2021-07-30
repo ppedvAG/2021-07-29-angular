@@ -1,0 +1,11 @@
+<h2>TIMER, THEMA OUTPUTS</h2>
+
+<app-tick 
+[time]="10" 
+(start)="handleStart()"
+(tick)="handleTick($event)"
+(end)="handleEnd($event)"
+></app-tick>
+<p>{{startMessage}}</p>
+<p>{{tickMessage}}</p>
+<p>{{endMessage}}</p>

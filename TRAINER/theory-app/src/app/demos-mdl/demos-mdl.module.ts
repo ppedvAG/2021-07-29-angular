@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TimeComponent } from './time/time.component';
 import { OverviewDemosComponent } from './overview-demos/overview-demos.component';
-import { CardComponent } from './card/card.component';
+import { TimerComponent } from './timer/timer.component';
 import { ClassVarsComponent } from './class-vars/class-vars.component';
 import { TemplateVarsComponent } from './template-vars/template-vars.component';
 import { InputVarsComponent } from './input-vars/input-vars.component';
@@ -13,6 +13,7 @@ import { DiceComponent } from './dice/dice.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { PwconfirmComponent } from './pwconfirm/pwconfirm.component';
+import { TickComponent } from './tick/tick.component';
 
 
 
@@ -20,7 +21,7 @@ import { PwconfirmComponent } from './pwconfirm/pwconfirm.component';
   declarations: [
     TimeComponent,
     OverviewDemosComponent,
-    CardComponent,
+    TimerComponent,
     ClassVarsComponent,
     TemplateVarsComponent,
     InputVarsComponent,
@@ -28,7 +29,8 @@ import { PwconfirmComponent } from './pwconfirm/pwconfirm.component';
     DiashowComponent,
     EventsComponent,
     DiceComponent,
-    PwconfirmComponent
+    PwconfirmComponent,
+    TickComponent
   ],
   imports: [
     CommonModule,

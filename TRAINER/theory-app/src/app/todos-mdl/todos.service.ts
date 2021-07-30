@@ -36,7 +36,12 @@ export class TodosService {
       statusText: "OK"
       url: "https://jsonplaceholder.typicode.com/todo/"
       __proto__: HttpResponseBase 
-      */    
+      */   
+     
+      addTodoInService(todoTitle: string) {
+        console.log('neues Todo im Service');
+
+      }
   
   
 }

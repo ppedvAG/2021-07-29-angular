@@ -4,6 +4,8 @@ import { OverviewTodosComponent } from './overview-todos/overview-todos.componen
 import { TodosComponent } from './todos/todos.component';
 import { TodoComponent } from './todo/todo.component';
 import { TodoDirComponent } from './todo-dir/todo-dir.component';
+import { AddTodoComponent } from './add-todo/add-todo.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -12,10 +14,12 @@ import { TodoDirComponent } from './todo-dir/todo-dir.component';
     OverviewTodosComponent,
     TodosComponent,
     TodoComponent,
-    TodoDirComponent
+    TodoDirComponent,
+    AddTodoComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   exports: [
     OverviewTodosComponent
