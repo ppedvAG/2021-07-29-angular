@@ -19,3 +19,6 @@
 
 <!-- Option mit ngClass und Map -->
 <p [style.font-size.px]=getFontSize() [ngClass]="diceClasses">{{zufallszahl}}</p>
+
+<!-- ngIf - Element wird angezeigt, wenn Bedingung stimmt -->
+<p *ngIf="zufallszahl == 1">das hilft ihnen nicht viel. versuchen sie nochmal</p>
