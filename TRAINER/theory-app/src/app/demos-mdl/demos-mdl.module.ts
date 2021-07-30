@@ -9,6 +9,7 @@ import { InputVarsComponent } from './input-vars/input-vars.component';
 import { LifecycleComponent } from './lifecycle/lifecycle.component';
 import { DiashowComponent } from './diashow/diashow.component';
 import { EventsComponent } from './events/events.component';
+import { DiceComponent } from './dice/dice.component';
 
 
 
@@ -22,7 +23,8 @@ import { EventsComponent } from './events/events.component';
     InputVarsComponent,
     LifecycleComponent,
     DiashowComponent,
-    EventsComponent
+    EventsComponent,
+    DiceComponent
   ],
   imports: [
     CommonModule
