@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { OverviewTodosComponent } from './overview-todos/overview-todos.component';
 import { TodosComponent } from './todos/todos.component';
 import { TodoComponent } from './todo/todo.component';
+import { TodoDirComponent } from './todo-dir/todo-dir.component';
 
 
 
@@ -10,7 +11,8 @@ import { TodoComponent } from './todo/todo.component';
   declarations: [
     OverviewTodosComponent,
     TodosComponent,
-    TodoComponent
+    TodoComponent,
+    TodoDirComponent
   ],
   imports: [
     CommonModule

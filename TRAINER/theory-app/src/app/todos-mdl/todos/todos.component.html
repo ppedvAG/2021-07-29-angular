@@ -2,7 +2,19 @@
 
 <!-- {{this.todos[0]}} -->
 <table>
+    <thead>
+        <tr>
+            <th>userId</th>
+            <th>id</th>
+            <th>title</th>
+            <th>completed</th>
+        </tr>
+    </thead>
     <tbody>
-        <app-todo [todo]="todos[0]"></app-todo>
+        <!-- Option mit einer Komponente, die wiederholt wird. Dadurch dass es ein zusätlicher Knoten im DOM ist, muss display Eigenschaft angepasst werden -->
+        <!-- <app-todo *ngFor="let todo of todos" [todo]="todo"></app-todo> -->
+        
+        <!-- Option mit keinem weiteren DOM-Knoten, um an die display eigenschaft nicht zu denken -->
+        <tr app-todo-dir *ngFor="let todo of todos" [todo]="todo"></tr>
     </tbody>
 </table>

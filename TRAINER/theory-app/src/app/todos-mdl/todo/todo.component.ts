@@ -4,7 +4,9 @@ import ITodo from '../itodo';
 @Component({
   selector: 'app-todo',
   templateUrl: './todo.component.html',
-  styles: [
+  styles: [`:host {
+    display: contents;
+  }`
   ]
 })
 export class TodoComponent implements OnInit {
