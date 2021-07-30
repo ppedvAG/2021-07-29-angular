@@ -27,3 +27,5 @@ Ein Kurs von PPEDV :rocket:
 - rxjs im service
 - forms, ngModel etc
 - Outputs
+- changeDetection
+- Material

@@ -7,6 +7,7 @@ import { DemosMdlModule } from './demos-mdl/demos-mdl.module';
 import { MainNavigationComponent } from './main-navigation/main-navigation.component';
 import { TodosMdlModule } from './todos-mdl/todos-mdl.module';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [    
@@ -20,6 +21,7 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
     DemosMdlModule,
     TodosMdlModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [MainNavigationComponent]

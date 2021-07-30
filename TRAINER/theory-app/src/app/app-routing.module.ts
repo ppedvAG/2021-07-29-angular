@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ChangeDetectionComponent } from './demos-mdl/change-detection/change-detection.component';
 import { ClassVarsComponent } from './demos-mdl/class-vars/class-vars.component';
 import { DiashowComponent } from './demos-mdl/diashow/diashow.component';
 import { DiceComponent } from './demos-mdl/dice/dice.component';
 import { EventsComponent } from './demos-mdl/events/events.component';
 import { InputVarsComponent } from './demos-mdl/input-vars/input-vars.component';
 import { LifecycleComponent } from './demos-mdl/lifecycle/lifecycle.component';
+import { MaterialComponent } from './demos-mdl/material/material.component';
 import { OverviewDemosComponent } from './demos-mdl/overview-demos/overview-demos.component';
 import { PwconfirmComponent } from './demos-mdl/pwconfirm/pwconfirm.component';
 import { TemplateVarsComponent } from './demos-mdl/template-vars/template-vars.component';
@@ -28,6 +30,8 @@ const routes: Routes = [
       {path: 'time', component: TimeComponent},     
       {path: 'app-pwconfirm', component: PwconfirmComponent},     
       {path: 'timer', component: TimerComponent},     
+      {path: 'change-detection', component: ChangeDetectionComponent},     
+      {path: 'app-material', component: MaterialComponent},     
     ]
   },
   {path: 'todos', component: OverviewTodosComponent}
