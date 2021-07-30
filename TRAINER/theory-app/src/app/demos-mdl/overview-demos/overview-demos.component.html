@@ -1,40 +1,11 @@
 <p>OVERVIEW-DEMOS</p>
 
-<app-class-vars></app-class-vars>
-<hr>
+<a routerLink="class-vars">class-vars</a> |
+<a routerLink="diashow">diashow</a> | 
+<a routerLink="dice">dice</a> |
+<a routerLink="events">events</a> |
+<a routerLink="input-vars">input-vars</a> |
+<a routerLink="lifecycle">lifecycle</a> |
+<a routerLink="template-vars">template-vars</a> |
 
-<app-template-vars></app-template-vars>
-<hr>
-
-<pre>
-    mit @Input() markiert man die Props, die dafür gedacht sind, Werte von der Elternkomponente zu übernehmen.
-    Die Übergabe kann auch durch eine Zwischenvariable stattfinden, die im Dekorator angelegt wird: @Input(varName).
-    In den Hochkommata bei Wertübergabe an Input-Variablen können beliebige JS-Expressions ausgeführt werden.
-</pre>
-<app-input-vars [placeholder1]="'wertVonOben1'"></app-input-vars>
-<!-- <app-input-vars [placeholder1]="'wertVonOben1'" [placeholder2]="'wertVonOben2'"></app-input-vars> 
-    Unter dem Namen placeholder2 kann man auf die Prop nicht zugreifen.
--->
-<app-input-vars [placeholder1]="'wertVonOben1'" [anotherName]="'andererWertVonOben'"></app-input-vars>
-<app-input-vars [placeholder1]="true ? 'true' : 'false'"></app-input-vars>
-<hr>
-
-<app-lifecycle [inputProp]="'wert für input prop'"></app-lifecycle>
-<hr>
-
-<app-diashow [images]="[
-'https://picsum.photos/300/200?image=0',
-'https://picsum.photos/300/200?image=10',
-'https://picsum.photos/300/200?image=20',
-'https://picsum.photos/300/200?image=30'
-]"></app-diashow>
-<hr>
-
-<app-events></app-events>
-<hr>
-
-<app-dice></app-dice>
-<hr>
-
-<app-time></app-time>
-<app-card></app-card>
+<router-outlet></router-outlet>

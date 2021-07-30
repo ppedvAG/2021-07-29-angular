@@ -10,6 +10,7 @@ import { LifecycleComponent } from './lifecycle/lifecycle.component';
 import { DiashowComponent } from './diashow/diashow.component';
 import { EventsComponent } from './events/events.component';
 import { DiceComponent } from './dice/dice.component';
+import { AppRoutingModule } from '../app-routing.module';
 
 
 
@@ -27,7 +28,8 @@ import { DiceComponent } from './dice/dice.component';
     DiceComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    AppRoutingModule
   ],
   exports: [OverviewDemosComponent]
 })
