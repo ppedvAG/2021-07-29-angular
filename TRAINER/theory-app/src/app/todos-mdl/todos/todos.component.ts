@@ -10,7 +10,9 @@ import ITodo  from '../itodo';
 })
 export class TodosComponent implements OnInit {
 
-  todos!: ITodo[];
+  // Ohne Initialwert wird beim ersten Rendern ein Fehler in die Konsole ausgegeben. View funktioniert aber.
+  // todos!: ITodo[];
+  todos: ITodo[] = [];
 
   constructor(private httpClient: HttpClient) { }
 
