@@ -22,3 +22,8 @@ Ein Kurs von PPEDV :rocket:
 - [ ] Demo:
 - [ ] Lab:
 - [ ] Commit:
+
+- service
+- rxjs im service
+- forms, ngModel etc
+- Outputs

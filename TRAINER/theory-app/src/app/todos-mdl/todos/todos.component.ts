@@ -1,6 +1,6 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import ITodo  from '../itodo';
+import { TodosService } from '../todos.service';
 
 @Component({
   selector: 'app-todos',
@@ -14,15 +14,17 @@ export class TodosComponent implements OnInit {
   // todos!: ITodo[];
   todos: ITodo[] = [];
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private todosService: TodosService) { }
 
   ngOnInit(): void {
-    this.httpClient.get('https://jsonplaceholder.typicode.com/todos/')
+    this.getTodos()
+  }
+
+  getTodos() {
+    this.todosService.getTodosObservable()
     .subscribe(response => {
       this.todos = response as ITodo[];
       console.log('this.todos: ', this.todos)
     });
   }
-
-
 }
